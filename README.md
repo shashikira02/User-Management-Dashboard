@@ -1,18 +1,69 @@
-# React + Vite
+# User Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive user management interface built with React 19 and Tailwind CSS 4.
+The app demonstrates viewing, adding, editing, deleting, searching, sorting, filtering, and paginating user records fetched from a mock API (JSONPlaceholder). It focuses on clean architecture, modular components, and a great developer experience.
 
-Currently, two official plugins are available:
+## Project Data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Purpose: Provide a simple CRUD experience over a mock backend with real-world table UX (search, sort, filter, pagination).
+- Entities: Users with fields like ID, First Name, Last Name, Email, Department.
+- Data Source: JSONPlaceholder `/users` endpoint .
+- Core UX:
+  - Table with sorting (by ID/First/Last/Email/Department)
+  - Global search and advanced filter panel
+  - Pagination with selectable page sizes (10, 25, 50, 100)
+  - Add/Edit via form dialog with client-side validation
+  - Delete with confirmation
+  - Loading and error states
+  - Fully responsive design
+- Architecture:
+  - React 19 function components with hooks
+  - Modular structure (components, hooks, utils) for reusability and clarity
+  - Tailwind CSS 4 for utility-first, consistent styling
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- React 19 (react, react-dom)
+- Tailwind CSS 4
+- Vite plugin for Tailwind (via @tailwindcss/vite)
+- Node.js scripts (npm) for dev/build/preview
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js 20+
+- npm 10+
+
+Verify versions:
+- node -v
+- npm -v
+
+  
+## Getting Started
+
+1) Clone the repository:
+   ```
+   git clone https://github.com/shashikira02/User-Management-Dashboard.git
+   cd User-Management-Dashboard
+   ```
+
+2) Install dependencies:
+   ```
+   npm install
+   ```
+
+3) Start the development server:
+    ```
+    npm run dev
+    ```
+Then open the URL from the terminal output (usually http://localhost:5173).
+
+
+
+
+
+
+
+
+
+
